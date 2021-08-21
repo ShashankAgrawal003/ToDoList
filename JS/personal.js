@@ -204,9 +204,6 @@ class item {
 
             input.style.textDecoration = "line-through";
             itemBox.style.opacity = 0.5;
-            // var checkboxes = document.getElementsByClassName("completed");
-            // checkboxes.checked=true;
-
 
         } else {
             input.style.textDecoration = "none";

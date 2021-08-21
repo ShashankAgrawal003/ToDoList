@@ -133,10 +133,6 @@ class item {
 
 
     createItem(name, dateTimeValue, divContainer) {
-
-        // taskVector.style.display = 'none';
-
-
         var itemBox = document.createElement('div');
         itemBox.classList.add('item');
         var dateBox = document.createElement('div');
@@ -147,9 +143,6 @@ class item {
         input.disabled = true;
         input.value = name;
         input.classList.add('item_input');
-
-
-
 
         var checkForCompleted = document.createElement('INPUT');
         checkForCompleted.setAttribute("type", "checkbox");
@@ -213,7 +206,6 @@ class item {
             edit.innerHTML = '<i class="material-icons create" style="color:blue;">create</i>';
             window.addEventListener('keydown', (e) => {
                 if (e.which == 13) {
-                    // this.edit(input, name, arrayName, edit);
                     input.disabled = !input.disabled;
                     edit.innerHTML = '<i class="material-icons create" style="color:grey;">create</i>';
                     if (arrayName === "todos") {
@@ -408,13 +400,13 @@ function showError(input, className, msg) {
     const formControl = input.parentNode;
     formControl.className = `${className}` + ' error';
     const small = formControl.querySelector('small');
-    // console.log(formControl.className);
+   
     small.innerHTML = msg;
 }
 function showSuccess(input, className) {
     const formControl = input.parentNode;
     formControl.className = `${className}`;
-    // console.log(formControl.className);
+   
 }
 
 
@@ -441,12 +433,12 @@ for (var v = 0; v < completedArray.length; v++) {
     new item(completedArray[v], completeDateTime[v], "completed");
 
 }
-// console.log(container);
+
 var abc = document.querySelectorAll(".item");
-// console.log(abc);
+
 for (var v = 0; v < starArray.length; v++) {
     if (starArray[v] === 1) {
-        // console.log(abc[v].childNodes[4]);
+        
         var xyz = abc[v].childNodes[4];
 
         xyz.innerHTML = '<i class="material-icons star_rate" style="color:#FFBA00;">star_rate</i>';
