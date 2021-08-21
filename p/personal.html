@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <link rel="icon" href="../images/logoIcon-removebg-preview.png" type="image/icon type">
+    <title>Personal</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+    <link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/home_page.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <style>
+        ::-webkit-calendar-picker-indicator {
+
+            
+
+            filter: invert(49%) sepia(96%) saturate(2418%) hue-rotate(161deg) brightness(94%) contrast(101%);
+        }
+
+        .star_rate {
+            pointer-events: none;
+        }
+
+        .completed {
+            text-decoration: line-through;
+            opacity: 0.5;
+        }
+
+        .completed input {
+            text-decoration: line-through;
+        }
+
+        .input-group.error input {
+            border: 2px solid red;
+        }
+
+        small {
+            visibility: hidden;
+            display: block;
+            margin-top: 5px;
+            margin-left: 5px;
+        }
+
+        .error small {
+            color: red;
+
+
+            visibility: visible;
+        }
+
+        #personal {
+            border-left: 10px solid lightgreen;
+        }
+
+        #personal i {
+            color: lightgreen
+        }
+
+        .vector img {
+            max-width: 23vw;
+        }
+
+        .secondTab {
+            margin-left: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Mynavbar">
+        <a href="../index.html"><img src="../images/logo-removebg-preview.png" height="60px" width="90px"
+                alt="logo"></a>
+    </div>
+    <input type="checkbox" name="" id="chk">
+    <label for="chk" class="show-btn">
+        <i class="fa fa-bars"></i>
+    </label>
+    <label for="chk" class="hide-btn">
+        <i class="fa fa-bars"></i>
+    </label>
+
+
+    <!-- ---------Navbar finish----------- -->
+    <div class="content">
+        <h1><span class="title">Personal</span> List</h1>
+        <div class="input-div box">
+            <div class="input-group">
+                <input type="text" class="input" placeholder="What Do You Want to Do...">
+                <small>Message</small>
+
+            </div>
+            <div class="margin"></div>
+
+
+        </div>
+        <div class="button">
+            <button type="button" class="btn btn-primary add">Add</button>
+
+        </div>
+
+
+
+        <div class="vector" id="personal-vector">
+            <img src="../images/todoimage5.jpg" class="img-fluid" alt="Responsive image">
+            <p>“A good plan today is better than a perfect plan tomorrow.”
+            </p>
+        </div>
+        <div class="secondTab">
+            <div class="container">
+
+            </div>
+
+
+            <!--  completed -->
+
+            <h2></h2>
+            <div class="completed">
+
+
+            </div>
+
+        </div>
+    </div>
+    <!-- ------sidebar started------- -->
+    <div class="sidebar" id="side">
+        <ul>
+            <li onclick="home()"><a href="Todo.html" id="home"><i class="fa fa-home"></i><span>Home</span></a></li>
+            <li onclick="tasks()"><a href="Todo.html" id="tasks"><i
+                        class="fa fa-check-circle"></i><span>Tasks</span></a></li>
+
+            <li><a href="goals.html" id="goals"><i class="fa fa-tasks"></i><span>Goals</span></a></li>
+            <li><a href="#" id="personal"><i class="fa fa-user"></i><span>Personal</span></a></li>
+        </ul>
+
+    </div>
+
+
+
+
+
+    <script src='../JS/personal.js'></script>
+</body>
+
+</html>
