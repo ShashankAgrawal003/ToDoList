@@ -20,6 +20,7 @@
 .Mynavbar img{
     text-align: center;
 }
+
 .navbar h1{
     color:white;
 }
@@ -31,22 +32,26 @@
     top:2px;
     left:20px;
 }
+
 .show-btn{
     opacity:0;
 }
+
 .sidebar i{
     display:inline;
 }
+
 #chk:checked ~ .sidebar{
     max-width: 70px;
     min-width:75px;
     width:2%;
     transition: 0.4s;
 }
+
 #chk:checked ~ .sidebar i{
    display:inline;
-    
 }
+
 #chk:checked ~ .sidebar span{
     display:none;
 }
@@ -54,9 +59,11 @@
 #chk:checked ~ .show-btn{
     opacity:1;
 }
+
 #chk:checked ~ .hide-btn{
     opacity:0;
 }
+
 #chk:checked ~ .content{
    width:90%;
    margin-top:90px;
@@ -69,11 +76,10 @@
     transition:0.7s;
     font-family: 'Sansita Swashed', cursive;
 }
+
 .content h1{
     margin-bottom: 25px;
 }
-
-
 
 .text p{
     text-align:justify;
@@ -108,10 +114,12 @@
 a i{
     margin-right:15px;
 }
+
 .sidebar ul li a:hover{
     border-left: 10px solid white;
 
 }
+
 .social{
     width: inherit;
     position:fixed;
@@ -123,6 +131,7 @@ a i{
     border-top: 2px solid rgba(255,255,255,0.1);
     padding:15px 25px;
 }
+
 .social i{
     font-size: 30px;
     color:white;
@@ -142,30 +151,25 @@ a i{
     .sidebar span{
         display:none;
     }
-    /* .sidebar:hover span{
-        display: inline;
-       
-    } */
-    /* .sidebar:hover{ 
-        min-width: 200px;
-    } */
+    
     #chk:checked ~ .sidebar{
         min-width: 100vw;
         left:0;
         text-align: center;
-        
     }
+
     #chk:checked ~ .sidebar span{
         display:inline;
-    
     }
 
     #chk:checked ~ .show-btn{
         opacity:1;
     }
+
     #chk:checked ~ .hide-btn{
         opacity:0;
     }
+
     #chk:checked ~ .content{
         width:75%;
         margin-top:70px;
@@ -179,17 +183,7 @@ a i{
          transition:0.7s;
      }
     
-   
     .navbar h1{
         display:none;
     }
-    /* .js-is-hidden{
-        max-width: 70px;
-        min-width:75px;
-        width:2%;
-    }
-    .js-is-hidden span{
-        display: none;
-    }
-    */
 }

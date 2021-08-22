@@ -10,9 +10,11 @@
   border: 5px solid transparent;
   position: relative;
 }
+
 .container h1 {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
+
 .item {
   margin-bottom: 35px;
   line-height: 70px;
@@ -21,6 +23,7 @@
   justify-content: start;
   display: flex;
 }
+
 .item p {
   line-height: 10px;
   color: gray;
@@ -29,13 +32,16 @@
   position: absolute;
   top: 35px;
 }
+
 .item span {
   position: relative;
   top: -1px;
 }
+
 .container {
   margin-top: 50px;
 }
+
 .clock {
   display: inline;
 }
@@ -49,6 +55,7 @@ input[type="time"] {
   padding: 10px;
   margin-right: 10px;
 }
+
 .box input[type="text"] {
   border: 2px solid grey;
   outline: none;
@@ -57,18 +64,21 @@ input[type="time"] {
   padding: 10px;
   width: 80%;
 }
+
 input[type="date"]:focus,
 input[type="time"]:focus,
 input[type="text"]:focus {
   border: 2px solid skyblue;
   outline: none;
 }
+
 input[type="checkbox"] {
   border: none;
   outline: none;
   width: 25px;
   height: 25px;
 }
+
 .item input[type="text"] {
   width: 73%;
   height: 30px;
@@ -84,6 +94,7 @@ input[type="checkbox"] {
   color: black;
   text-transform: capitalize;
 }
+
 .edit {
   color: grey;
   border: none;
@@ -104,21 +115,26 @@ input[type="checkbox"] {
   border: none;
   outline: none;
 }
+
 .edit:hover {
   color: blue;
   transform: scale(1.2);
 }
+
 .star:hover {
   color: #ffba00;
   transform: scale(1.2);
 }
+
 .remove:hover {
   color: red;
   transform: scale(1.2);
 }
+
 .margin {
   margin-top: 15px;
 }
+
 .calendar {
   display: inline;
 }
@@ -127,18 +143,19 @@ input[type="checkbox"] {
   margin: 10px 25px;
   outline: none;
 }
+
 .add {
   height: 30px;
   width: 80px;
   border-radius: 8px;
   color: white;
   background-color: #e41f5c;
-
   border: none;
   font-weight: bold;
   text-transform: uppercase;
   outline: none;
 }
+
 .add:hover {
   background-color: #e00b4f;
   transform: scale(1.1);
@@ -147,9 +164,11 @@ input[type="checkbox"] {
 .vector {
   text-align: center;
 }
+
 .vector img {
   max-width: 30vw;
 }
+
 .vector p {
   color: palevioletred;
   font-size: 13px;
@@ -163,7 +182,6 @@ input[type="checkbox"] {
   margin-top: 25px;
   margin-right: 185px;
   margin-left: 20px;
-
   padding: 5px;
 }
 
@@ -172,6 +190,7 @@ h2 {
   font-size: 23px;
   color: rgb(77, 12, 124);
 }
+
 .indentation {
   margin-left: 30px;
 }
